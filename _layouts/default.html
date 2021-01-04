@@ -110,7 +110,8 @@ ga('send', 'pageview');
 
 <!-- Site Title
 ================================================== -->
-{% if not page.heading_disabled %}	
+{% if page.heading_disabled %}	
+{% else %}
 <div class="mainheading">
     <h1 class="sitetitle">{{ site.name }}</h1>
     <p class="lead">
